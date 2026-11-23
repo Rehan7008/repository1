@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","11927","create user First1","","2026-11-10","passed","2026-11-10","Data driven test","Parameterization\params2.spec.js","",""
+"","11764","create user First2","","2026-11-10","passed","2026-11-10","Data driven test","Parameterization\params2.spec.js","",""
+"","12339","Login and Complete product purchase","","2026-11-10","passed","2026-11-10","","saucedemo2.spec.js","",""
+"","12846","create user First3","","2026-11-10","passed","2026-11-10","Data driven test","Parameterization\params2.spec.js","",""

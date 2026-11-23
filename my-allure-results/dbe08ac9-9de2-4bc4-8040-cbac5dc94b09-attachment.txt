@@ -1,0 +1,1 @@
+locator('//ol[@dir=\'ltr\']//li').first()

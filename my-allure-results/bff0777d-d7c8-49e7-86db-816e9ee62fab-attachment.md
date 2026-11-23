@@ -1,0 +1,68 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: PomOne\demoblazeTest.spec.js >> Demoblaze Test
+- Location: tests\PomOne\demoblazeTest.spec.js:7:1
+
+# Error details
+
+```
+Error: locator.waitFor: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//*[@id=\'tbodyid\']').nth(2) to be visible
+
+```
+
+# Test source
+
+```ts
+  1  | exports.HomePage = class HomePage{
+  2  | 
+  3  |     constructor(page){
+  4  | 
+  5  |         this.page = page;
+  6  |         this.productList = "//*[@id='tbodyid']";
+  7  |         this.addToCartButton = "a[onclick='addToCart(3)']";
+  8  |         this.cartIcon = "#cartur";
+  9  | 
+  10 |     }
+  11 | 
+  12 |     async addProductToCart(productName){
+  13 | 
+  14 |         await this.page.waitForSelector(this.productList);
+  15 |         // const productsList = await this.page.$$(this.productList);
+  16 |         // for(const product of productsList){
+  17 |         //     if(productName == await product.textContent()){
+  18 |         //         await product.click();
+  19 |         //         break;
+  20 |         //     }
+  21 |         // }
+  22 | 
+  23 |         // await this.page.locator(this.productList).first().waitFor();
+  24 |         // await this.page.locator(this.productList).filter({ hasText: productName }).nth(2).click();
+  25 | 
+> 26 |         await this.page.locator(this.productList).nth(2).waitFor();
+     |                                                          ^ Error: locator.waitFor: Target page, context or browser has been closed
+  27 |         await this.page.locator(this.productList).filter({ hasText: productName }).nth(2).click();
+  28 | 
+  29 |         this.page.on('dialog', async dialog =>{
+  30 |             if(dialog.message().includes('added')){
+  31 |                 await dialog.accept();
+  32 |             }
+  33 |         })
+  34 | 
+  35 |         await this.page.locator(this.addToCartButton);
+  36 |     }
+  37 | 
+  38 |     async gotoCart(){
+  39 |         
+  40 |         await this.page.locator(this.cartIcon).click();
+  41 |     }
+  42 |     
+  43 | }
+```
