@@ -1,11 +1,6 @@
 {
   "config": {
-    "argv": [
-      "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Playwright Atmn\\node_modules\\@playwright\\test\\cli.js",
-      "test",
-      "tests/TestSuite/csv.spec.js"
-    ],
+    "argv": [],
     "configFile": "C:\\Playwright Atmn\\playwright.config.js",
     "rootDir": "C:/Playwright Atmn/tests",
     "failOnFlakyTests": false,
@@ -102,21 +97,21 @@
     },
     "shard": null,
     "tags": [],
-    "updateSnapshots": "default",
-    "updateSourceMethod": "patch",
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "3way",
     "version": "1.65.0",
     "workers": 8,
     "webServer": null
   },
   "suites": [
     {
-      "title": "TestSuite\\csv.spec.js",
-      "file": "TestSuite/csv.spec.js",
+      "title": "faker2.spec.js",
+      "file": "faker2.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Formalidation-rahul1",
+          "title": "Testing in a website",
           "ok": true,
           "tags": [],
           "tests": [
@@ -128,15 +123,28 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 8,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 10917,
+                  "duration": 10552,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "name: Vicente Kuhlman\n"
+                    },
+                    {
+                      "text": "email: Carl11@gmail.com\n"
+                    },
+                    {
+                      "text": "current address: 204 Barton Fields\n"
+                    },
+                    {
+                      "text": "permanent address: New Zenaville\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-11-17T17:27:30.050Z",
+                  "startTime": "2026-11-25T15:29:14.234Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -144,121 +152,19 @@
               "status": "expected"
             }
           ],
-          "id": "4141eb77f789828836a6-c00c22b5251fe094c1f2",
-          "file": "TestSuite/csv.spec.js",
-          "line": 9,
-          "column": 5
-        },
-        {
-          "title": "Formalidation-rahul2",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10965,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-17T17:27:41.249Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "4141eb77f789828836a6-1eb275c61c5ec0ec1d27",
-          "file": "TestSuite/csv.spec.js",
-          "line": 9,
-          "column": 5
-        },
-        {
-          "title": "Formalidation-rahul3",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10824,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-17T17:27:52.232Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "4141eb77f789828836a6-df6e5dabd950a9a1ef4c",
-          "file": "TestSuite/csv.spec.js",
-          "line": 9,
-          "column": 5
-        },
-        {
-          "title": "Formalidation-rahul4",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 40000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 10935,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-11-17T17:28:03.071Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "4141eb77f789828836a6-1b2ad6864ac4c8e473ae",
-          "file": "TestSuite/csv.spec.js",
-          "line": 9,
-          "column": 5
+          "id": "201a69b8537d791cf2b6-a1a794a5df1e365a3995",
+          "file": "faker2.spec.js",
+          "line": 4,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-17T17:27:29.722Z",
-    "duration": 44455.129,
-    "expected": 4,
+    "startTime": "2026-11-25T15:29:13.155Z",
+    "duration": 12418.375999999931,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
