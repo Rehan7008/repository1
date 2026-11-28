@@ -1,12 +1,13 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="44.455129">
-<testsuite name="TestSuite\csv.spec.js" timestamp="2026-11-17T17:27:29.754Z" hostname="" tests="4" failures="0" skipped="0" time="43.641" errors="0">
-<testcase name="Formalidation-rahul1" classname="TestSuite\csv.spec.js" time="10.917">
-</testcase>
-<testcase name="Formalidation-rahul2" classname="TestSuite\csv.spec.js" time="10.965">
-</testcase>
-<testcase name="Formalidation-rahul3" classname="TestSuite\csv.spec.js" time="10.824">
-</testcase>
-<testcase name="Formalidation-rahul4" classname="TestSuite\csv.spec.js" time="10.935">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="12.418375999999931">
+<testsuite name="faker2.spec.js" timestamp="2026-11-25T15:29:13.634Z" hostname="" tests="1" failures="0" skipped="0" time="10.552" errors="0">
+<testcase name="Testing in a website" classname="faker2.spec.js" time="10.552">
+<system-out>
+<![CDATA[name: Vicente Kuhlman
+email: Carl11@gmail.com
+current address: 204 Barton Fields
+permanent address: New Zenaville
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
